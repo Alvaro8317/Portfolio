@@ -14,9 +14,12 @@ function calcule(){
     input = document.getElementById("monthlyInstallments");
     const installments = input.value;
     console.log(`The recolected values are: purchase: ${totalPurchase} and ${installments}`);
-    const cap = capSubscription(totalPurchase,installments)
+    const cap = capSubscription(totalPurchase,installments);
+    cap.toFixed(3);
     document.getElementById("capitalSubscription").value=cap;
     const interest = parseInt(interestMon(totalPurchase));
     document.getElementById("interest").value=interest;
-    document.getElementById("monthlyFee").value=interest + cap;
+    totalPayment=interest + cap;
+    totalPayment.toFixed(3);
+    document.getElementById("monthlyFee").value=totalPayment;
 }
