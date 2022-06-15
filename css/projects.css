@@ -1,0 +1,55 @@
+:root{
+    --color-div: white;
+}
+
+#main-calculator-interest{
+    background-color: var(--color-div);
+    width: 500px;
+    height: 250px;
+    opacity: 50%;
+    border-radius: 10px;
+    position: absolute;
+    left: 50px;
+    top: 150px;
+}
+
+p{
+    color:black;
+    font-size: small;
+    padding: 10px;
+}
+
+span{
+    color:black;
+    font-size: smaller;
+    margin-left: 10px;
+}
+
+label{
+    width: 35px;
+}
+
+input{
+    position: relative;
+    left: 10%;
+    width: 25%;
+    display: inline-block;
+    text-align: center;
+}
+
+button{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid;
+    padding: 0px 10px;
+    border-radius: 8%;
+    opacity: 100%;
+}
+
+.result{
+    position: relative;
+    display:inline-block;
+    width: 100px;
+}

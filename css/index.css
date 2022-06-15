@@ -1,0 +1,52 @@
+:root{
+    --color-header: #342a2b;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    opacity: 100%;
+    display: inline-block;
+    
+}
+
+html{
+    background-image: url("http://www.solofondos.com/wp-content/uploads/2015/11/21omxpw.jpg");
+    background-repeat: no-repeat;
+    color: white;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+header{
+    background-color: var(--color-header);
+    opacity: 50%;
+    width: 100vw;
+    height: 25px;
+}
+
+header nav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-right-header{
+    width: 250px;
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .nav-right-header a{
+    margin-right: 10px;
+    opacity: 100%;
+    color: white;
+}

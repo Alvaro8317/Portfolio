@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Lobster&family=Tiro+Devanagari+Sanskrit:ital@1&family=Zilla+Slab:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/projects.css" />
+    <script src="../js/projects.js"></script>
+    <title>Projects</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+          <ul class="nav-right-header">
+              <li><a href="./index.html">Index</a></li>
+              <li><a href="./projects.html">Projects</a></li>
+              <li><a href="#">Contact</a></li>
+          </ul>
+      </nav>
+  </header>
+    <main>
+      <h3>
+        Calculator of credit interest <br/>(Development for big-head)
+      </h3>
+      <div id="main-calculator-interest">
+        <form>
+          <p>
+            Please introduce the cuantity of the purchase and the cuantity of
+            the fees for your loan
+          </p>
+          <label for="totalValue">
+            <span>Value of purchase:</span>
+            <input type="number" id="totalValue" />
+          </label>
+          <br />
+          <label for="monthlyInstallments">
+            <span>Cuantity of installments</span>
+            <input type="number" id="monthlyInstallments" />
+          </label>
+        </form>
+        <button type="submit" onclick="calcule()">Calcule!</button>
+        <div id="results">
+          <span>Capital Subscription</span>
+          <input
+            type="number"
+            id="capitalSubscription"
+            class="result"
+            disabled
+          />
+          <br />
+          <span>Monthly Interest</span>
+          <input type="number" id="interest" class="result" disabled />
+          <br />
+          <span>Monthly Fee (total value)</span>
+          <input type="number" id="monthlyFee" class="result" disabled />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
